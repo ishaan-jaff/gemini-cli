@@ -118,7 +118,7 @@ export async function createContentGenerator(
     headers: {
       'User-Agent': `GeminiCLI/${version} (${process.platform}; ${process.arch})`,
     },
-    ...(baseUrl && { baseURL: baseUrl }),
+    ...(baseUrl && { baseUrl: baseUrl }),
   };
   if (
     config.authType === AuthType.LOGIN_WITH_GOOGLE_PERSONAL ||
